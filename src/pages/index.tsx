@@ -1,4 +1,4 @@
-import { Box, VStack } from '@chakra-ui/react';
+import { Box, VStack, Image, Text } from '@chakra-ui/react';
 
 function LoginPage() {
   return (
@@ -18,6 +18,8 @@ function LoginPage() {
         maxW="400px"
       >
         <VStack spacing={4} as="form">
+        <Image src="/src/app/images/logo.png" alt="Logo" boxSize="250px" />
+        <Text fontSize="xl" fontWeight="bold">LOGIN</Text>
           {}
         </VStack>
       </Box>
