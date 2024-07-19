@@ -21,7 +21,7 @@ This project leverages modern technologies to ensure a robust and scalable solut
 ### 📋 Prerequisites
 
 - Ensure the backend API is running. Follow the setup instructions available [here](https://github.com/LeoCamisa/register-api).
-- Node.js and Yarn should be installed on your system.
+- Node.js should be installed on your system.
 
 ### 📦 Installation
 
@@ -65,5 +65,9 @@ The new user can now log in and record their check-ins.
 ### 📅 Registering Check-Ins
 Log in with the newly created user credentials.
 Add new check-in records through the user interface.
+
+### 👀 View Logs in Real Time
+On the dashboard page in the administrative area you can check the points recorded in real time, without having to leave the page!
+
 ### 📝 License
 This project is licensed under the MIT License. See the LICENSE file for more details
