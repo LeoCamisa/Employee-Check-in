@@ -25,11 +25,18 @@ This project leverages modern technologies to ensure a robust and scalable solut
 
 ### 📦 Installation
 
-Navigate to the project directory and install the necessary dependencies:
+1. **Clone the repository:**
 
-```bash
-npm install
-```
+    ```bash
+    git clone https://github.com/LeoCamisa/employee-check-in.git
+    cd employee-check-in
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
 ### ▶️ Running the Application
 To start the application, run:
 ```bash
