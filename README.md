@@ -35,7 +35,7 @@ This project leverages modern technologies to ensure a robust and scalable solut
 2. **Install dependencies:**
 
     ```bash
-    npm install
+    npm install --legacy-peer-deps
     ```
 ### ▶️ Running the Application
 To start the application, run:
