@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🕒 Employee Check-In System
 
-## Getting Started
+The Employee Check-In System is a comprehensive solution for managing the daily check-ins of employees in a company. It provides a secure and efficient way for employees to record their attendance, and for administrators to monitor and manage these records in real-time.
 
-First, run the development server:
+## 📄 Project Overview
+
+This system is designed to facilitate accurate and efficient time tracking for employees. The key features include real-time record viewing for administrators, secure authentication for employees.
+
+## 🛠 Technologies Used
+
+This project leverages modern technologies to ensure a robust and scalable solution:
+
+- **React JS**
+- **TypeScript**
+- **GraphQL**
+- **Apollo**
+- **Material UI**
+
+## 🌐 Setup and Installation
+
+### 📋 Prerequisites
+
+- Ensure the backend API is running. Follow the setup instructions available [here](https://github.com/LeoCamisa/register-api).
+- Node.js and Yarn should be installed on your system.
+
+### 📦 Installation
+
+Navigate to the project directory and install the necessary dependencies:
 
 ```bash
+npm install
+```
+### ▶️ Running the Application
+To start the application, run:
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+The application will be accessible at: http://localhost:3001.
+
+### 🔑 Accessing the Application
+👨‍💼 Administrator Login
+Open the GraphQL Playground at http://localhost:3000/graphql.
+Execute the following mutation to create an administrator user:
+```bash
+mutation {
+  createUser(input: {
+    name: "admin",
+    email: "admin@efficlin.com",
+    password: "pw123",
+    role: "admin"
+  }) {
+    id
+    name
+    email
+    role
+  }
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 👥 Creating a New User
+Log in as the administrator using the credentials created above.
+Navigate to the administration page and fill in the details to create a new user. Ensure the role is set to "colaborador" for them to access the register point feature.
+The new user can now log in and record their check-ins.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 📅 Registering Check-Ins
+Log in with the newly created user credentials.
+Add new check-in records through the user interface.
+### 📝 License
+This project is licensed under the MIT License. See the LICENSE file for more details
